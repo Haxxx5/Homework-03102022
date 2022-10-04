@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haggai Kovacs-EXA23-041022</title>
+</head>
+<body>
+    <script>  
+      while (true){
+        x=parseInt(prompt("Enter the number of stars"))
+        if(x<=0){break}
+        sum=0
+        num=x
+        while (true){
+            if(num==0){break}
+            sum+=num%10
+            num=Math.floor(num/10)
+        }
+        document.write(`The digital sum of ${x} is ${sum} <br>`)
+    }
+    </script>
+</body>
+</html>
